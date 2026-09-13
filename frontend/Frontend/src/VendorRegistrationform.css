@@ -1,0 +1,102 @@
+.vendor-register-container {
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fcfbf9;
+  padding: 40px 20px;
+}
+
+.vendor-register-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 520px;
+  padding: 40px 35px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  border: 1px solid #f0e9df;
+}
+
+.vendor-register-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2b2319;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.vendor-register-card p {
+  font-size: 14px;
+  color: #7a7063;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.vendor-register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.vendor-register-card label {
+  font-size: 11px;
+  font-weight: 700;
+  color: #4a4035;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.vendor-register-card input[type="text"],
+.vendor-register-card input[type="file"],
+.vendor-register-card textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e2d9cd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  background-color: #faf8f5;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.vendor-register-card input[type="text"]:focus,
+.vendor-register-card textarea:focus {
+  border-color: #c5a880;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(197, 168, 128, 0.15);
+}
+
+.vendor-register-card textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.vendor-register-card button[type="submit"] {
+  background-color: #c5a880; /* EventEase Gold Theme */
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.vendor-register-card button[type="submit"]:hover {
+  background-color: #b3946a;
+}
+
+.vendor-register-card button[type="submit"]:disabled {
+  background-color: #e5d8c5;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  color: #d32f2f;
+  font-size: 12px;
+  margin-top: 4px;
+}

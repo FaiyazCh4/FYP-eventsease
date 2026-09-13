@@ -1,0 +1,116 @@
+.vc-wrap {
+  background: var(--color-background-primary, #fff);
+  border: 0.5px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 320px;
+}
+
+.vc-heading {
+  font-size: 13px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 14px;
+}
+
+.vc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.vc-month-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.vc-nav {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 0.5px solid #e0e0e0;
+  background: #fff;
+  font-size: 18px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.vc-nav:hover {
+  background: #e6f1fb;
+  border-color: #1a56a0;
+  color: #1a56a0;
+}
+
+.vc-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+}
+
+.vc-day-name {
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  padding: 4px 0;
+  font-weight: 500;
+}
+
+.vc-cell {
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 2px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.15s;
+}
+
+.vc-empty {
+  cursor: default;
+}
+
+.vc-day:hover:not(.vc-booked):not(.vc-past) {
+  background: #e6f1fb;
+  color: #1a56a0;
+}
+
+.vc-today {
+  background: #e6f1fb;
+  color: #1a56a0;
+  font-weight: 500;
+  border-radius: 50%;
+}
+
+.vc-selected {
+  background: #1a56a0;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 500;
+}
+
+.vc-booked {
+  background: #fee2e2;
+  color: #dc2626;
+  cursor: not-allowed;
+  border-radius: 6px;
+}
+
+.vc-past {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.vc-legend {
+  display: flex;
+  gap: 14px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
